@@ -65,6 +65,9 @@ function startGame() {
   console.log(newSum);
   if (sumHand === 21) {
     gameMessage.textContent = "BLACKJACK";
+    dealerEl.textContent = "";
+    sumDealer.textContent = "";
+
     isAlive = false;
   } else {
     renderGame();
