@@ -9,20 +9,18 @@
   </head>
   <body>
     <h1>Blackjack</h1>
-    <p id="message-el">Let's play</p>
-    <p id="cards-el">Cards:</p>
-    <div class="player-cards">
-      <div id="card-img1"></div>
-      <div id="card-img2"></div>
+    <p id="cards-el"></p>
+    <div class="player-cards"></div>
+    <p id="sum-el"></p>
+    <div class="hithold">
+      <button id="newBtn" onclick="drawNewCard()">HIT</button>
+      <button id="newBtn" onclick="showDealer()">HOLD</button>
     </div>
-    <p id="sum-el">Sum:</p>
-    <button id="startBtn">Start Game</button>
-    <button id="newBtn">New Card</button>
-    <p id="player-el"></p>
-    <button id="newBtn">HOLD</button>
+    <button id="startBtn" onclick="startGame()">Start Game</button>
     <p id="dealer-el"></p>
-    <p id="sum-dealer">Sum:</p>
-    <p id="game-message">YOU WIN</p>
+    <div class="dealer-cards"></div>
+    <p id="sum-dealer"></p>
+    <p id="game-message"></p>
     <script src="index.js"></script>
   </body>
 </html>
