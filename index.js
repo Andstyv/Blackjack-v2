@@ -56,7 +56,7 @@ function startGame() {
 
   for (let i = 0; i < playerHand.length; i++) {
     sumHand += playerHand[i].value;
-    document.querySelector(".player-cards").innerHTML += `<div id="card-img1" style="background-image: url(img/${playerSuit[i]}/${playerHand[i].name}.png)">TEST</div>`;
+    document.querySelector(".player-cards").innerHTML += `<div id="card-img1" style="background-image: url(img/${playerSuit[i]}/${playerHand[i].name}.png)"></div>`;
   }
 
   sumCards.textContent = `Sum: ${sumHand}`;
